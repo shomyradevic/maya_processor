@@ -1,6 +1,5 @@
 from __future__ import (
     print_function,
-    #unicode_literals
 )
 from os import listdir, path
 
@@ -13,7 +12,7 @@ class Pipe:
     def generator(self):
         """
         :return: (
-            Just yields every line from passed directory path in constructor.
+            Yields every line from passed directory path in constructor.
             Existence checking has already been done.
         )
         """
@@ -47,29 +46,45 @@ class Parser:
         parsed_meshes = []
         mesh_description = ''
 
+        last_3 = ['', '', '']
+
         for line in self.pipeline.generator():
             if begin:
                 if line.find(end_pattern, 0, en) >= 0:
                     begin = False
-                    parsed_meshes.append(self.partial_mesh_parse(mesh_description))
+                    fresh_mesh = self.partial_mesh_parse(mesh_description, last_3)
+                    parsed_meshes.append(fresh_mesh)
                     mesh_description = ''
                 else:
                     mesh_description += line
-            elif line.find(begin_pattern, 0, bn) >= 0:
+            else:
+                last_3 = last_3[1:] + [line]
+
+            if line.find(begin_pattern, 0, bn) >= 0:
                 begin = True
                 mesh_description += line
 
-    def partial_mesh_parse(self, mesh):
+        [print(mesh) for mesh in parsed_meshes]
+
+
+    def partial_mesh_parse(self, mesh, last_3):
         """
         :param mesh: String representation of specific mesh object.
+        :param: last_3: list of last 3 lines. For position needs.
         :return: None
         """
         n = len(mesh)
         data = dict()
         data["name"] = self.get_name(mesh=mesh, n=n)
-        print("Found name: " + str(data["name"]))
+        data["uid"] = self.get_uid(mesh=mesh, n=n)
+        data["position"] = self.get_position(last_3=last_3)
+        return data
 
     def get_name(self, mesh, n):
+        """
+        :param mesh: Mesh string
+        :return: Name or None
+        """
         begin_pattern, end_pattern = " mesh -n ", "-p"
         i = mesh.find(begin_pattern, 0, n)
 
@@ -80,22 +95,45 @@ class Parser:
 
         j = mesh.find(end_pattern, i, n)
 
-        if j == -1:
+        if j == i:
             return None
         else:
             return mesh[i + 1:j - 2]
 
-    def get_uid(self, mesh):
-        pass
+    def get_uid(self, mesh, n):
+        """
+        :param mesh: Mesh string
+        :return: Uid or None
+        """
+        begin_pattern, end_pattern = " -uid ", ";"
+        i = mesh.find(begin_pattern, 0, n)
 
-    def get_position(self, mesh):
-        pass
+        if i == -1:
+            return None
+        else:
+            i += len(begin_pattern)
 
+        j = mesh.find(end_pattern, i, n)
+
+        if j == i:
+            return None
+        else:
+            return mesh[i + 1:j - 1]
+
+    def get_position(self, last_3):
+        """
+        :param last_3: List of last 3 lines.
+        :return: tuple of positions or None.
+        """
+        begin_pattern, end_pattern = "setAttr \".t\" -type \"double3\"", ";"
+        for line in last_3:
+            i = line.find(begin_pattern, 0, len(line))
+            if i >= 0:
+                i += len(begin_pattern)
+                j = line.find(end_pattern, i, len(line))
+                if j >= i:
+                    return tuple(line[i:j].strip().split())
 
 
 if __name__ == '__main__':
-    #a = [5, 2, 3, 4]
-    #b = tuple(a)
-    #d = {'a': b}
-    #print(d)
-    Parser(files_folder="..\\proba").start()
+    Parser(files_folder="..\\example_files").start()
