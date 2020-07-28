@@ -129,6 +129,3 @@ class Parser:
                 if j >= i:
                     return tuple(line[i:j].strip().split())
 
-
-if __name__ == '__main__':
-    Parser(files_folder="..\\example_files").parse()
