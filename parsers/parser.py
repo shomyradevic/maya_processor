@@ -42,16 +42,15 @@ class Parser:
         """
         begin_pattern, end_pattern = 'createNode mesh ', 'createNode '
         bn, en = len(begin_pattern) + 1, len(end_pattern) + 1
-        begin = False
+        begin = False  # Indicator(flag) to tell us if we are currently parsing a Mesh or not
 
-        parsed_meshes = []
-        mesh_description = ''
-
-        last_3 = ['', '', '']
+        parsed_meshes = []  # Home of parsed Mesh objects
+        mesh_description = ''  # Description of current parsing Mesh object
+        last_3 = ['', '', '']  # Holds history of last 3 lines. We need it to capture position of Mesh object
 
         for line in self.pipeline.generator():
-            if begin:
-                if line.find(end_pattern, 0, en) >= 0:  # We found a Mesh object
+            if begin:  # When this is True, append every line to a mesh_description
+                if line.find(end_pattern, 0, en) >= 0:  # We found "end" of Mesh object
                     begin = False
                     fresh_mesh = self.partial_mesh_parse(mesh_description, last_3)
                     parsed_meshes.append(fresh_mesh)
@@ -65,7 +64,7 @@ class Parser:
                 begin = True
                 mesh_description += line
 
-        [print(mesh) for mesh in parsed_meshes]
+        [print(mesh) for mesh in parsed_meshes]  # print all parsed meshes
 
     def partial_mesh_parse(self, mesh, last_3):
         """

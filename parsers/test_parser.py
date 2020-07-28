@@ -13,10 +13,20 @@ class ParserTest(unittest.TestCase):
     as well as regular test cases.
     """
 
-    def setUp(self):
-        self.parser = Parser(files_folder="example_files")
+    @classmethod
+    def setUpClass(cls):
+        """
+        We are using this class variable during entire testing.
+        """
+        ParserTest.parser = Parser(files_folder="example_files")
 
     def control(self, test_cases, function_with_args):
+        """
+        :param test_cases: Lists of dictionaries. One dictionary holds the
+        function input and expected output.
+        :param function_with_args: Callable string.
+        :return:
+        """
         for case in test_cases:
             parsed_result = eval(function_with_args)
             self.assertEqual(parsed_result, case["output"])
@@ -27,11 +37,8 @@ class ParserTest(unittest.TestCase):
             instance = Parser(files_folder="..\\wrong_path\\to\\files_folder")
         except SystemExit:
             pass
-
-        self.assertEqual(instance, None)
-
-    def tearDown(self):
-        pass
+        finally:
+            self.assertEqual(instance, None)
 
     def test_get_name(self):
         test_cases = (
@@ -61,7 +68,7 @@ class ParserTest(unittest.TestCase):
         )
         self.control(
             test_cases=test_cases,
-            function_with_args="self.parser.get_name(mesh=case[\"input\"], n=len(case[\"input\"]))"
+            function_with_args="ParserTest.parser.get_name(mesh=case[\"input\"], n=len(case[\"input\"]))"
         )
 
     def test_get_uid(self):
@@ -85,7 +92,7 @@ class ParserTest(unittest.TestCase):
         )
         self.control(
             test_cases=test_cases,
-            function_with_args="self.parser.get_uid(mesh=case[\"input\"], n=len(case[\"input\"]))"
+            function_with_args="ParserTest.parser.get_uid(mesh=case[\"input\"], n=len(case[\"input\"]))"
         )
 
     def test_get_position(self):
@@ -112,7 +119,7 @@ class ParserTest(unittest.TestCase):
         )
         self.control(
             test_cases=test_cases,
-            function_with_args="self.parser.get_position(last_3=case[\"input\"])"
+            function_with_args="ParserTest.parser.get_position(last_3=case[\"input\"])"
         )
 
 

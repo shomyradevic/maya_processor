@@ -1,6 +1,0 @@
-● Use Python 2.7 -> Checked
-● Make sure library is Python 3 compatible -> Partially checked
-● Make sure it is pip installable (provide setup.py file)
-● Write unit tests for the library
-● Use google-style docstrings -> Checked
-● Comment your code -> Checked

@@ -14,8 +14,8 @@
       <file leaf-file-name="parser.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parsers/parser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="47">
-              <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+            <state relative-caret-position="297">
+              <caret line="35" column="55" lean-forward="true" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
               <folding>
                 <element signature="e#0#46#0" expanded="true" />
               </folding>
@@ -26,8 +26,8 @@
       <file leaf-file-name="test_parser.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/parsers/test_parser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="837">
+              <caret line="31" column="59" lean-forward="true" selection-start-line="31" selection-start-column="59" selection-end-line="31" selection-end-column="59" />
               <folding>
                 <element signature="e#0#68#0" expanded="true" />
               </folding>
@@ -35,14 +35,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="s.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/s.py">
+      <file leaf-file-name="example_google.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Desktop/example_google.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="51" column="17" lean-forward="false" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-3073">
+              <caret line="153" column="13" lean-forward="true" selection-start-line="153" selection-start-column="13" selection-end-line="153" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -85,8 +83,8 @@
         <option value="$PROJECT_DIR$/example_files/example_file_2.ma" />
         <option value="$PROJECT_DIR$/example_files/example_file_1.ma" />
         <option value="$PROJECT_DIR$/s.py" />
-        <option value="$PROJECT_DIR$/parsers/parser.py" />
         <option value="$PROJECT_DIR$/parsers/test_parser.py" />
+        <option value="$PROJECT_DIR$/parsers/parser.py" />
       </list>
     </option>
   </component>
@@ -259,24 +257,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test_parser_py - 2020.07.28 at 10h 38m 51s.xml">
-      <configuration name="Unittests in test_parser.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_parser_py - 2020.07.28 at 10h 42m 45s.xml">
-      <configuration name="Unittests in test_parser.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_parser_py - 2020.07.28 at 10h 42m 52s.xml">
-      <configuration name="Unittests in test_parser.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_parser_py - 2020.07.28 at 10h 43m 20s.xml">
-      <configuration name="Unittests in test_parser.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_parser_py - 2020.07.28 at 10h 43m 38s.xml">
-      <configuration name="Unittests in test_parser.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_parser_py - 2020.07.28 at 10h 43m 53s.xml">
-      <configuration name="Unittests in test_parser.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_test_parser_py - 2020.07.28 at 10h 45m 15s.xml">
       <configuration name="Unittests in test_parser.py" configurationId="tests" />
     </history-entry>
@@ -289,17 +269,34 @@
     <history-entry file="Unittests_in_test_parser_py - 2020.07.28 at 10h 46m 26s.xml">
       <configuration name="Unittests in test_parser.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_test_parser_py - 2020.07.28 at 10h 58m 00s.xml">
+      <configuration name="Unittests in test_parser.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_parser_py - 2020.07.28 at 10h 59m 24s.xml">
+      <configuration name="Unittests in test_parser.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_parser_py - 2020.07.28 at 11h 02m 05s.xml">
+      <configuration name="Unittests in test_parser.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_parser_py - 2020.07.28 at 11h 02m 27s.xml">
+      <configuration name="Unittests in test_parser.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_parser_py - 2020.07.28 at 11h 03m 03s.xml">
+      <configuration name="Unittests in test_parser.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_parser_py - 2020.07.28 at 11h 03m 25s.xml">
+      <configuration name="Unittests in test_parser.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39565217" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39565217" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -415,6 +412,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -447,33 +445,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/s.py">
+    <entry file="file://$USER_HOME$/Desktop/example_google.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="51" column="17" lean-forward="false" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
+        <state relative-caret-position="-3073">
+          <caret line="153" column="13" lean-forward="true" selection-start-line="153" selection-start-column="13" selection-end-line="153" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parsers/test_parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="837">
+          <caret line="31" column="59" lean-forward="true" selection-start-line="31" selection-start-column="59" selection-end-line="31" selection-end-column="59" />
           <folding>
-            <element signature="e#0#37#0" expanded="true" />
+            <element signature="e#0#68#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/parsers/parser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+        <state relative-caret-position="297">
+          <caret line="35" column="55" lean-forward="true" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
           <folding>
             <element signature="e#0#46#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parsers/test_parser.py">
+    <entry file="file://$PROJECT_DIR$/s.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#68#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="517">
+          <caret line="51" column="17" lean-forward="false" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
