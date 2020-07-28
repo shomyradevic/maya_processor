@@ -1,2 +1,2 @@
-# maya_parser
-A simple Python library for parsing .ma files. Works for both python2 and python3.
+# maya_processor
+A simple Python library for processing .ma files. Works for both python2 and python3.
