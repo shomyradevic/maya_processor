@@ -3,10 +3,15 @@ from __future__ import (
     print_function
 )
 import unittest
-from .parser import Parser
+from parsers.parser import Parser
 
 
 class ParserTest(unittest.TestCase):
+    """
+    Some of the test cases are questionable, the best practice in my opinion would be to interface with
+    employees that are responsible for generating .ma files, to see what are possible corner cases,
+    as well as regular test cases.
+    """
 
     def setUp(self):
         self.parser = Parser(files_folder="example_files")
@@ -16,9 +21,14 @@ class ParserTest(unittest.TestCase):
             parsed_result = eval(function_with_args)
             self.assertEqual(parsed_result, case["output"])
 
-    #def test_parse(self):
-        #instance = Parser(files_folder="..\\wrong_path")
-        #instance.parse()
+    def test_parse(self):
+        instance = None
+        try:
+            instance = Parser(files_folder="..\\wrong_path\\to\\files_folder")
+        except SystemExit:
+            pass
+
+        self.assertEqual(instance, None)
 
     def tearDown(self):
         pass
@@ -26,7 +36,7 @@ class ParserTest(unittest.TestCase):
     def test_get_name(self):
         test_cases = (
             {
-                "input": " ",
+                "input": "",
                 "output": None
             },
             {
@@ -57,7 +67,7 @@ class ParserTest(unittest.TestCase):
     def test_get_uid(self):
         test_cases = (
             {
-                "input": " ",
+                "input": "",
                 "output": None
             },
             {
@@ -81,32 +91,28 @@ class ParserTest(unittest.TestCase):
     def test_get_position(self):
         test_cases = (
             {
-                "input": " ",
+                "input": ['', '', ''],
                 "output": None
             },
             {
-                "input": "createNode mesh -n \"CubeShape\" -p \"Cube\"",
-                "output": "CubeShape"
+                "input": ["\0", "setAttr \".t\" -type \"double3\" -3 2 2 ;", "\0"],
+                "output": ('-3', '2', '2')
             },
             {
-                "input": "createNode transform -n \"Cube\"; \
-                                rename -uid \"8690CE34-4E5E-1275-5747-F8A21428D67B\"; \
-                                setAttr \".t\" -type \"double3\" -3 2 2 ; \
-                                createNode mesh -n \"CubeShape\" -p \"Cube\";",
-                "output": "CubeShape"
-            },
-            {
-                "input": "createNode mesh \"Cube\" -p",
+                "input": ["setAttr \".t\" -type \"double2\" -3 2 2 ;"],
                 "output": None
             },
             {
-                "input": "createNode mesh -n \"Sphere\"",
-                "output": None
+                "input": ["string"*100, "createNode transform -n \"Torus\"; \
+                            rename -uid \"6CA7FB06-409E-DADE-2932-68B89130D104\"; \
+                            setAttr \".t\" -type \"double3\" -9.7245613999699021 3.5468205018979577 -3.4691659115871456 ; \
+                            createNode mesh -n \"TorusShape\" -p \"Torus\";", "string"*100],
+                "output": ('-9.7245613999699021', '3.5468205018979577', '-3.4691659115871456')
             }
         )
         self.control(
             test_cases=test_cases,
-            function_with_args="self.parser.get_name(mesh=case[\"input\"], n=len(case[\"input\"]))"
+            function_with_args="self.parser.get_position(last_3=case[\"input\"])"
         )
 
 

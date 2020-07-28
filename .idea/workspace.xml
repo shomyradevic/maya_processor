@@ -14,8 +14,8 @@
       <file leaf-file-name="parser.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parsers/parser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="100" column="4" lean-forward="true" selection-start-line="100" selection-start-column="4" selection-end-line="116" selection-end-column="32" />
+            <state relative-caret-position="47">
+              <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
               <folding>
                 <element signature="e#0#46#0" expanded="true" />
               </folding>
@@ -26,8 +26,8 @@
       <file leaf-file-name="test_parser.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/parsers/test_parser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="683">
-              <caret line="104" column="13" lean-forward="true" selection-start-line="104" selection-start-column="13" selection-end-line="104" selection-end-column="13" />
+            <state relative-caret-position="237">
+              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding>
                 <element signature="e#0#68#0" expanded="true" />
               </folding>
@@ -38,8 +38,8 @@
       <file leaf-file-name="s.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/s.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="51" column="17" lean-forward="true" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
+            <state relative-caret-position="494">
+              <caret line="51" column="17" lean-forward="false" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -84,8 +84,8 @@
         <option value="$PROJECT_DIR$/proba/status.txt" />
         <option value="$PROJECT_DIR$/example_files/example_file_2.ma" />
         <option value="$PROJECT_DIR$/example_files/example_file_1.ma" />
-        <option value="$PROJECT_DIR$/parsers/parser.py" />
         <option value="$PROJECT_DIR$/s.py" />
+        <option value="$PROJECT_DIR$/parsers/parser.py" />
         <option value="$PROJECT_DIR$/parsers/test_parser.py" />
       </list>
     </option>
@@ -236,8 +236,8 @@
     <recent_temporary>
       <list size="4">
         <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in test_parser.py" />
-        <item index="1" class="java.lang.String" itemvalue="Python.s" />
-        <item index="2" class="java.lang.String" itemvalue="Python.parser" />
+        <item index="1" class="java.lang.String" itemvalue="Python.parser" />
+        <item index="2" class="java.lang.String" itemvalue="Python.s" />
         <item index="3" class="java.lang.String" itemvalue="Python.__init__" />
       </list>
     </recent_temporary>
@@ -259,34 +259,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test_parser_py - 2020.07.28 at 09h 53m 56s.xml">
+    <history-entry file="Unittests_in_test_parser_py - 2020.07.28 at 10h 38m 51s.xml">
       <configuration name="Unittests in test_parser.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_parser_py - 2020.07.28 at 09h 55m 43s.xml">
+    <history-entry file="Unittests_in_test_parser_py - 2020.07.28 at 10h 42m 45s.xml">
       <configuration name="Unittests in test_parser.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_parser_py - 2020.07.28 at 09h 56m 05s.xml">
+    <history-entry file="Unittests_in_test_parser_py - 2020.07.28 at 10h 42m 52s.xml">
       <configuration name="Unittests in test_parser.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_parser_py - 2020.07.28 at 10h 05m 21s.xml">
+    <history-entry file="Unittests_in_test_parser_py - 2020.07.28 at 10h 43m 20s.xml">
       <configuration name="Unittests in test_parser.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_parser_py - 2020.07.28 at 10h 05m 35s.xml">
+    <history-entry file="Unittests_in_test_parser_py - 2020.07.28 at 10h 43m 38s.xml">
       <configuration name="Unittests in test_parser.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_parser_py - 2020.07.28 at 10h 05m 59s.xml">
+    <history-entry file="Unittests_in_test_parser_py - 2020.07.28 at 10h 43m 53s.xml">
       <configuration name="Unittests in test_parser.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_parser_py - 2020.07.28 at 10h 06m 11s.xml">
+    <history-entry file="Unittests_in_test_parser_py - 2020.07.28 at 10h 45m 15s.xml">
       <configuration name="Unittests in test_parser.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_parser_py - 2020.07.28 at 10h 10m 28s.xml">
+    <history-entry file="Unittests_in_test_parser_py - 2020.07.28 at 10h 45m 46s.xml">
       <configuration name="Unittests in test_parser.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_parser_py - 2020.07.28 at 10h 11m 58s.xml">
+    <history-entry file="Unittests_in_test_parser_py - 2020.07.28 at 10h 46m 11s.xml">
       <configuration name="Unittests in test_parser.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_parser_py - 2020.07.28 at 10h 12m 13s.xml">
+    <history-entry file="Unittests_in_test_parser_py - 2020.07.28 at 10h 46m 26s.xml">
       <configuration name="Unittests in test_parser.py" configurationId="tests" />
     </history-entry>
   </component>
@@ -299,7 +299,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39565217" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39565217" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -447,30 +447,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parsers/parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="100" column="4" lean-forward="true" selection-start-line="100" selection-start-column="4" selection-end-line="116" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/s.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="51" column="17" lean-forward="true" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
+        <state relative-caret-position="494">
+          <caret line="51" column="17" lean-forward="false" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/parsers/parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/parsers/test_parser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="683">
-          <caret line="104" column="13" lean-forward="true" selection-start-line="104" selection-start-column="13" selection-end-line="104" selection-end-column="13" />
+        <state relative-caret-position="237">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding>
             <element signature="e#0#68#0" expanded="true" />
           </folding>
