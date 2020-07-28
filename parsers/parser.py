@@ -12,15 +12,16 @@ class Pipe:
     def generator(self):
         """
         :return: (
-            Yields every line from passed directory path in constructor.
+            Yields every line from each .ma file from passed directory path in constructor.
             Existence checking has already been done.
         )
         """
         for file_path in listdir(self.files_folder):
-            descriptor = open(path.join(self.files_folder, file_path), mode="r")
-            for line in descriptor:
-                yield line
-            descriptor.close()
+            if path.splitext(file_path)[1] == '.ma':
+                descriptor = open(path.join(self.files_folder, file_path), mode="r")
+                for line in descriptor:
+                    yield line
+                descriptor.close()
 
 
 class Parser:
@@ -34,7 +35,7 @@ class Parser:
 
         self.pipeline = Pipe(files_folder=files_folder)
 
-    def start(self):
+    def parse(self):
         """
         Main function that runs the parsing process.
         :return: None
@@ -50,7 +51,7 @@ class Parser:
 
         for line in self.pipeline.generator():
             if begin:
-                if line.find(end_pattern, 0, en) >= 0:
+                if line.find(end_pattern, 0, en) >= 0:  # We found a Mesh object
                     begin = False
                     fresh_mesh = self.partial_mesh_parse(mesh_description, last_3)
                     parsed_meshes.append(fresh_mesh)
@@ -66,12 +67,11 @@ class Parser:
 
         [print(mesh) for mesh in parsed_meshes]
 
-
     def partial_mesh_parse(self, mesh, last_3):
         """
         :param mesh: String representation of specific mesh object.
-        :param: last_3: list of last 3 lines. For position needs.
-        :return: None
+        :param: last_3: List of last 3 lines. For position needs.
+        :return: Dictionary represented Mesh object.
         """
         n = len(mesh)
         data = dict()
@@ -90,15 +90,13 @@ class Parser:
 
         if i == -1:
             return None
-        else:
-            i += len(begin_pattern)  # Name is after our pattern
+        i += len(begin_pattern)  # Name is after our pattern
 
         j = mesh.find(end_pattern, i, n)
 
-        if j == i:
+        if j == -1:
             return None
-        else:
-            return mesh[i + 1:j - 2]
+        return mesh[i + 1:j - 2]
 
     def get_uid(self, mesh, n):
         """
@@ -110,15 +108,13 @@ class Parser:
 
         if i == -1:
             return None
-        else:
-            i += len(begin_pattern)
+        i += len(begin_pattern)
 
         j = mesh.find(end_pattern, i, n)
 
-        if j == i:
+        if j == -1:
             return None
-        else:
-            return mesh[i + 1:j - 1]
+        return mesh[i + 1:j - 1]
 
     def get_position(self, last_3):
         """
@@ -136,4 +132,4 @@ class Parser:
 
 
 if __name__ == '__main__':
-    Parser(files_folder="..\\example_files").start()
+    Parser(files_folder="..\\example_files").parse()
